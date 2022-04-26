@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.Controller">
+   <children>
+      <GridPane prefHeight="500.0" prefWidth="1000.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.0" minWidth="10.0" prefWidth="355.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="958.0" minWidth="10.0" prefWidth="625.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox nodeOrientation="LEFT_TO_RIGHT" spacing="5.0">
+               <children>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="entityID" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EntityID" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="24.19091796875" />
+                        <Button fx:id="clear" mnemonicParsing="false" prefHeight="24.0" prefWidth="95.0" text="Clear fields" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="inGameID" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="InGameID" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="livingID" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LivingID" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="entityType" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EntityType" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="customName" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CustomName" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="posx" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PositionX" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="posy" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PositionY" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="posz" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PositionZ" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="dimension" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dimension" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="health" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Health" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="attackDamage" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AttackDamage" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="burnsInSunlight" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BurnsInSunlight" />
+                     </children>
+                  </HBox>
+                  <HBox nodeOrientation="RIGHT_TO_LEFT">
+                     <children>
+                        <TextField fx:id="hostility" />
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text=": " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hostility" />
+                     </children>
+                  </HBox>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="102.0" prefWidth="355.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="remove" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Remove Selected" GridPane.rowIndex="1" />
+                        <Button fx:id="search" layoutX="10.0" layoutY="49.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Search" GridPane.columnIndex="1" />
+                        <Button fx:id="edit" layoutX="10.0" layoutY="49.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Edit Selected" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="add" layoutX="188.0" layoutY="49.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Add to Table" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="448.0" minHeight="10.0" prefHeight="427.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <children>
+                  <TableView fx:id="tableInGame" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="gInGameID" prefWidth="82.0" text="InGameID" />
+                      <TableColumn fx:id="gEntityID" prefWidth="67.0" text="EntityID" />
+                        <TableColumn fx:id="gCustomName" prefWidth="104.0" text="CustomName" />
+                        <TableColumn fx:id="gPosX" text="PositionX" />
+                        <TableColumn fx:id="gPosY" minWidth="0.0" prefWidth="79.0" text="PositionY" />
+                        <TableColumn fx:id="gPosZ" prefWidth="76.0" text="PositionZ" />
+                        <TableColumn fx:id="gDimension" prefWidth="86.0" text="Dimension" />
+                    </columns>
+                  </TableView>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="comboBox" onAction="#handler" prefWidth="150.0" promptText="Select Table">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:id="entitySelect" fx:value="Entity" />
+                                    <String fx:id="inGameSelect" fx:value="In Game" />
+                                    <String fx:id="livingSelect" fx:value="Living" />
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  Click a row to select it!">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tableEntity" editable="true" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="eid" prefWidth="110.0" text="EntityID" />
+                        <TableColumn fx:id="etype" prefWidth="319.0" text="Type" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tableLiving" layoutX="25.0" layoutY="63.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="lLivingID" prefWidth="68.0" text="LivingID" />
+                        <TableColumn fx:id="lInGameID" prefWidth="91.0" text="InGameID" />
+                        <TableColumn fx:id="lHealth" prefWidth="73.0" text="Health" />
+                        <TableColumn fx:id="lAttackDamage" prefWidth="118.0" text="AttackDamage" />
+                        <TableColumn fx:id="lBurnsInSunlight" minWidth="0.0" prefWidth="109.0" text="BurnsInLight" />
+                        <TableColumn fx:id="lHostility" prefWidth="75.0" text="Hostility" />
+                     </columns>
+                  </TableView>
+               </children>
+            </GridPane>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
